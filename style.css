@@ -22,32 +22,36 @@ ol,li,ul {
 body {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     font-family: system-ui, -apple-system, 'Helvetica Neue', sans-serif;
     color: white;
     background-color: black;
+}
+span{
+    color:grey;
+}
+.home{
+    color: white;
 }
 
 .background-image {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
-    display: flex;
     position: absolute;
     z-index: -1;
 }
 
 header {
     font-family: "Sometype Mono", monospace;
-    padding: 25px;
-    width: 100vw;
-    height: 2,5vh;
-    flex-grow: 1;
+    padding:5px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
 
+}
+.nome{
+    color: white;
+}
 .icone-e-nome {
     display: flex;
     flex-direction: row;
@@ -55,7 +59,10 @@ header {
     justify-content: center;
     cursor: pointer;
 }
-
+.icone-e-nome img{
+    width: 20px;
+    height: 20px;
+}
 span {
     cursor: pointer;
 }
@@ -75,8 +82,6 @@ span {
 main {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -84,10 +89,8 @@ main {
 .main-content{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width:858px;
-    height:460px;
+    width:760px;
 }
 .main-text{
     font-size: 96px;
@@ -108,5 +111,36 @@ main {
     top: 574px;
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 80px;
+    margin-top: 20px;
+}
+
+@media(max-width: 760px){
+
+    main{
+        align-items: center;
+    }
+    .icone-e-nome img{
+        width: 10px;
+        height: 10px;
+    }
+    .button-1{
+        display: none;
+    }
+    span{
+        font-size: 10px;
+    }
+    .main-content{
+        flex-grow: 1;
+        width: 375px;
+    }      
+    .Sputnik{
+        font-size: 52px;
+    }
+    .main-text{
+        font-size: 52px;
+    }
+    .button-2{
+        margin-top: 20px;
+    }
+    
 }
