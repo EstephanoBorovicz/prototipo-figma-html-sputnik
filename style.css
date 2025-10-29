@@ -82,6 +82,7 @@ span {
 main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100vw;
     height: 100vh;
 }
@@ -90,6 +91,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     width:760px;
 }
 .main-text{
@@ -98,6 +100,7 @@ main {
 
 .sub-text{
     text-align: center;
+    color: grey;
 }
 
 .button-2 {
@@ -116,8 +119,8 @@ main {
 
 @media(max-width: 760px){
 
-    main{
-        align-items: center;
+    .main-content{
+        justify-content:flex-start;
     }
     .icone-e-nome img{
         width: 10px;
@@ -138,9 +141,10 @@ main {
     }
     .main-text{
         font-size: 52px;
+        margin-bottom: 120px;
     }
     .button-2{
-        margin-top: 20px;
+        margin-top: 50px;
     }
     
 }
