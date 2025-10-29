@@ -130,7 +130,7 @@ main {
         display: none;
     }
     span{
-        font-size: 10px;
+        font-size: 14px;
     }
     .main-content{
         flex-grow: 1;
